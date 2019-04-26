@@ -20,5 +20,9 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "bundler": "^0.8.0",
+    "npm": "^6.9.0"
   }
 }
