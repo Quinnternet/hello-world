@@ -1,0 +1,24 @@
+{
+  "name": "QuinnDarling",
+  "version": "1.0.0",
+  "description": "[It's me!](https://static.cybre.space/media_attachments/files/004/033/967/original/01721607761c1fd4.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quinnternet/hello-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quinnternet/hello-world/issues"
+  },
+  "homepage": "https://github.com/Quinnternet/hello-world#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
