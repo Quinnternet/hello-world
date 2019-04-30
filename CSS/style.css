@@ -1,20 +1,8 @@
 body {
     background: #000;
+    color:darkorchid;
     }
 h1 {
-    color:darkorchid;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     }
-h2 {
-    color: darkorchid;
-    font-style: italic;
-    }
-
-p {
-    color: darkorchid;
-}
-   
-ul {
-    color: darkorchid;
-}
