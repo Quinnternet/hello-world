@@ -1,21 +1,60 @@
 body {
+    margin: 0px;
     background: #000;
-    color:darkorchid;
-    }
+    color: violet;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content {
+    margin: 5px;
+    border: 5px dotted lavender;
+    padding: 10px;
+}
+
+.dootdoot {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: paleturquoise;
+}
+
+#footer {
+    margin: 5px;
+    border: 5px ridge lavender;
+    padding: 10px;
+}
+
 h1 {
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
-    }
-ul {
-    font-weight: bold;
-    color: darkslateblue;
 }
-.dootdoot {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: darkblue;
+
+#header {
+    margin: 5px;
+    border: 5px dashed lavender;
+    padding: 10px;
 }
+
+img {
+    width: 25%;
+}
+
 #shiny {
     font-weight: bolder;
     color: deeppink;
     background-color: lightskyblue;
+}
+
+#sidebar {
+    margin: 5px;
+    border: 5px groove lavender;
+    padding: 10px;
+}
+
+ul {
+    font-weight: bold;
+    color: blueviolet;
 }
