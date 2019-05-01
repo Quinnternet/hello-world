@@ -6,3 +6,16 @@ h1 {
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     }
+ul {
+    font-weight: bold;
+    color: darkslateblue;
+}
+.dootdoot {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkblue;
+}
+#shiny {
+    font-weight: bolder;
+    color: deeppink;
+    background-color: lightskyblue;
+}
