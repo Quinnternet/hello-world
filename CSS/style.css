@@ -1,7 +1,7 @@
 body {
     margin: 0px;
-    background: #000;
-    color: violet;
+    background: black;
+    color: green;
 }
 
 .container {
@@ -11,19 +11,17 @@ body {
 }
 
 #content {
-    margin: 5px;
-    border: 5px dotted lavender;
+    border: 1px solid darkgreen;
     padding: 10px;
 }
 
 .dootdoot {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: paleturquoise;
+    color: greenyellow;
 }
 
 #footer {
-    margin: 5px;
-    border: 5px ridge lavender;
+    border: 1px solid darkgreen;
     padding: 10px;
 }
 
@@ -38,31 +36,37 @@ h1 {
 }
 
 #header {
-    margin: 5px;
-    border: 5px dashed lavender;
-    padding: 10px;
+    border: 1px solid darkgreen;
+}
+
+a {
+    color: greenyellow;
 }
 
 img {
     width: 25%;
 }
 
-#shiny {
-    font-weight: bolder;
-    color: deeppink;
-    background-color: lightskyblue;
+#navigation {
+    border: 1px solid darkgreen;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    right: 0;
 }
 
-#sidebar {
-    margin: 5px;
-    border: 5px groove lavender;
-    padding: 10px;
-}
-#sidebar li {
+#navigation li {
     display: inline;
+}
+
+#shiny {
+    font-weight: bolder;
+    color: greenyellow;
+    background-color: darkgreen;
 }
 
 ul {
     font-weight: bold;
-    color: lightblue;
+    color: green;
 }
