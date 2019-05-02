@@ -47,10 +47,6 @@ img {
     width: 25%;
 }
 
-.navigation {
-    display: inline;
-}
-
 #shiny {
     font-weight: bolder;
     color: deeppink;
@@ -61,6 +57,9 @@ img {
     margin: 5px;
     border: 5px groove lavender;
     padding: 10px;
+}
+#sidebar li {
+    display: inline;
 }
 
 ul {
