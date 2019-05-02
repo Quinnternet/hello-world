@@ -1,7 +1,7 @@
 body {
     margin: 0px;
-    background: black;
-    color: green;
+    background: #2a0867;
+    color: #b371f4
 }
 
 .container {
@@ -11,17 +11,17 @@ body {
 }
 
 #content {
-    border: 1px solid darkgreen;
+    border: 1px solid #b371f4;
     padding: 10px;
 }
 
 .dootdoot {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: greenyellow;
+    color: #b371f4;
 }
 
 #footer {
-    border: 1px solid darkgreen;
+    border: 1px solid #b371f4;
     padding: 10px;
 }
 
@@ -36,12 +36,12 @@ h1 {
 }
 
 #header {
-    padding: 60px 0px 0px 0px;
-    border: 1px solid darkgreen;
+    padding: 80px 0px 0px 0px;
+    border: 1px solid #b371f4;
 }
 
 a {
-    color: greenyellow;
+    color: #b371f4;
 }
 
 img {
@@ -49,9 +49,9 @@ img {
 }
 
 #navigation {
-    border: 1px solid darkgreen;
+    border: 1px solid #b371f4;
     position: fixed;
-    background-color: black;
+    background-color: #2a0867;
     width: 100%;
     top: 0;
     right: 0;
@@ -63,11 +63,11 @@ img {
 
 #shiny {
     font-weight: bolder;
-    color: greenyellow;
+    color: #b371f4;
     background-color: darkgreen;
 }
 
 ul {
     font-weight: bold;
-    color: green;
+    color: #b371f4;
 }
