@@ -47,6 +47,10 @@ img {
     width: 25%;
 }
 
+.navigation {
+    display: inline;
+}
+
 #shiny {
     font-weight: bolder;
     color: deeppink;
