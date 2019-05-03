@@ -1,3 +1,7 @@
+/* specificity, least to most specific:
+element, .class or :pseudoselector, #id, inline styling, !important
+ */
+
 body {
     margin: 0px;
     background: #2a0867;
@@ -57,8 +61,25 @@ img {
     right: 0;
 }
 
-#navigation li {
+#navigation a:hover+ul,
+#navigation a+ul:hover {
+    display: block;
+    background-color: #2a0867;
+}
+
+#navigation .container>ul>li {
     display: inline;
+}
+
+#navigation li {
+    position: relative;
+}
+
+#navigation ul ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 15px;
 }
 
 #shiny {
