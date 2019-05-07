@@ -1,7 +1,3 @@
-/* specificity, least to most specific:
-element, .class or :pseudoselector, #id, inline styling, !important
- */
-
 body {
     margin: 0px;
     background: #2a0867;
