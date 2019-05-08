@@ -1,7 +1,12 @@
 body {
+    background-color: #2a0867;
+    color: #b371f4;
+    display: grid;
+    grid-template-areas: "navigation" "header" "content" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content auto min-content;
     margin: 0px;
-    background: #2a0867;
-    color: #b371f4
+    min-height: 100vh;
 }
 
 .container {
@@ -12,16 +17,13 @@ body {
 
 #content {
     border: 1px solid #b371f4;
+    grid-area: content;
     padding: 10px;
-}
-
-.dootdoot {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #b371f4;
 }
 
 #footer {
     border: 1px solid #b371f4;
+    grid-area: footer;
     padding: 10px;
 }
 
@@ -36,8 +38,8 @@ h1 {
 }
 
 #header {
-    padding: 80px 0px 0px 0px;
     border: 1px solid #b371f4;
+    grid-area: header;
 }
 
 a {
@@ -50,17 +52,23 @@ img {
 
 #navigation {
     border: 1px solid #b371f4;
-    position: fixed;
     background-color: #2a0867;
-    width: 100%;
+    grid-area: navigation;
+    position: sticky;
     top: 0;
     right: 0;
 }
 
-#navigation a:hover+ul,
-#navigation a+ul:hover {
+#navigation a:hover+ul, #navigation a+ul:hover {
     display: block;
     background-color: #2a0867;
+}
+
+#navigation .container>ul {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 #navigation .container>ul>li {
@@ -78,13 +86,19 @@ img {
     top: 15px;
 }
 
-#shiny {
-    font-weight: bolder;
-    color: #b371f4;
-    background-color: #6e1667;
-}
-
 ul {
     font-weight: bold;
     color: #b371f4;
+    padding-inline-start: 10px;
+}
+
+@media (min-width: 900px) {
+    body {
+        grid-template-areas: "navigation header" "navigation content" "navigation footer";
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: min-content auto min-content;
+    }
+    #navigation .container>ul {
+        flex-direction: column;
+    }
 }
