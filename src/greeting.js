@@ -1,12 +1,11 @@
 const userName = prompt('What is your name?');
+const h1 = document.querySelector('h1');
+const title = h1.textContent;
 
-const verifyName = function verifyName(){
-    if(userName === 'Q'){
-        console.log('Yay!');
-    }
-    else{
-        console.log('Aww!');
+const greetUser = function greetUser(){
+    if(userName !== ''){
+        h1.textContent = title + ', ' + userName;
     }
 };
 
-verifyName();
+greetUser();
