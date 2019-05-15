@@ -15,4 +15,4 @@ const greetUser = function greetUser(){
     }
 };
 
-greetUser();
+export default greetUser;
