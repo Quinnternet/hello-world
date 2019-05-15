@@ -5,9 +5,14 @@ import Footer from './Components/Footer';
 
 const root = document.querySelector('#root');
 
+const state = {
+    'title': 'welcome to the q u i n n t e r n e t'
+
+};
+
 root.innerHTML = `
-    ${Navigation}
-    ${Header}
-    ${Content}
-    ${Footer}
+    ${Navigation(state)}
+    ${Header(state)}
+    ${Content(state)}
+    ${Footer(state)}
     `;
