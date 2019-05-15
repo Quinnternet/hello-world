@@ -16,3 +16,7 @@ root.innerHTML = `
     ${Content(state)}
     ${Footer(state)}
     `;
+
+document
+    .querySelector('li > a')
+    .addEventListener('click', (event) => event.preventDefault());
