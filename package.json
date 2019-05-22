@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "bundler": "^0.8.0",
+    "lodash": "^4.17.11",
+    "navigo": "^7.1.2",
     "npm": "^6.9.0"
   }
 }

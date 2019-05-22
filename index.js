@@ -2,21 +2,31 @@ import Navigation from './Components/Navigation';
 import Header from './Components/Header';
 import Content from './Components/Content';
 import Footer from './Components/Footer';
+import * as states from './Store';
+import { capitalize } from 'lodash';
+import Navigo from 'navigo';
 
+const router = new Navigo(window.location.origin);
 const root = document.querySelector('#root');
 
-const state = {
-    'title': 'welcome to the q u i n n t e r n e t'
-
-};
-
-root.innerHTML = `
+function render(state){
+    root.innerHTML = `
     ${Navigation(state)}
     ${Header(state)}
     ${Content(state)}
     ${Footer(state)}
     `;
+ 
+    router.updatePageLinks();
+}
 
-document
-    .querySelector('li > a')
-    .addEventListener('click', (event) => event.preventDefault());
+// Checks the URL bar
+// Takes anything beyond window.location.origin
+// Assigns it to an objcet called 'params' with a key of its filepath
+// Uses 'capitalize' from lodash to capitalize the name of the object so it will render properly
+router
+    .on(':path', (params) => {
+        render(states[capitalize(params.path)]);
+    })
+    .on('/', () => render(states.Home))
+    .resolve();

@@ -1,4 +1,4 @@
-export default function Content(){
+export default function(state){
     return `
 <div id="content">
     <div class="container">
