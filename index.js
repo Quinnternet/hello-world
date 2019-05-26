@@ -1,8 +1,8 @@
-import Navigation from './Components/Navigation';
-import Header from './Components/Header';
-import Content from './Components/Content';
-import Footer from './Components/Footer';
-import * as states from './Store';
+import Navigation from './components/Navigation';
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
+import * as states from './store';
 import { capitalize } from 'lodash';
 import Navigo from 'navigo';
 
@@ -16,7 +16,7 @@ function render(state){
     ${Content(state)}
     ${Footer(state)}
     `;
- 
+
     router.updatePageLinks();
 }
 

@@ -1,6 +1,4 @@
 export default () => `
-    <div id="footer">
-        <div class="container">
             <footer>
                 <ul>
                     <li><a href="https://github.com/Quinnternet">My Github page</a></li>
@@ -8,6 +6,4 @@ export default () => `
                     <li><a href=""></a></li>
                 </ul>
             </footer>
-        </div>
-    </div>
     `;
