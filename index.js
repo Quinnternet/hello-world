@@ -22,7 +22,7 @@ function render(state){
 
 // Checks the URL bar
 // Takes anything beyond window.location.origin
-// Assigns it to an objcet called 'params' with a key of its filepath
+// Assigns it to an object called 'params' with a key of its filepath
 // Uses 'capitalize' from lodash to capitalize the name of the object so it will render properly
 router
     .on(':path', (params) => {
