@@ -4,6 +4,7 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 import * as states from './store';
 import { capitalize } from 'lodash';
+import axios from 'axios';
 import Navigo from 'navigo';
 
 const router = new Navigo(window.location.origin);
@@ -19,6 +20,13 @@ function render(state){
 
     router.updatePageLinks();
 }
+
+axios
+    .get('https://jsonplaceholder.typicode.com/posts')
+    .then((response) =>
+        // TODO: Grab the posts from the data and iterate over them
+        // We need to 'push' each and ever post into states.Blog.posts
+        console.log(response.data));
 
 // Checks the URL bar
 // Takes anything beyond window.location.origin
