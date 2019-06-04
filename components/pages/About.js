@@ -1,3 +1,5 @@
-export default `
+export default function(state){
+    return  `
     About me
     `;
+}

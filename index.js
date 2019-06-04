@@ -21,13 +21,6 @@ function render(state){
     router.updatePageLinks();
 }
 
-axios
-    .get('https://jsonplaceholder.typicode.com/posts')
-    .then((response) =>
-        // TODO: Grab the posts from the data and iterate over them
-        // We need to 'push' each and ever post into states.Blog.posts
-        console.log(response.data));
-
 // Checks the URL bar
 // Takes anything beyond window.location.origin
 // Assigns it to an object called 'params' with a key of its filepath
@@ -38,3 +31,12 @@ router
     })
     .on('/', () => render(states.Home))
     .resolve();
+
+axios
+    .get('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => {
+        response.data.forEach((post) => states.Blog.posts.push(post));
+        if(router.lastRouteResolved() && router.lastRouteResolved().params.path === 'blog'){
+            render(states.Blog);
+        }
+    });

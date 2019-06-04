@@ -1,4 +1,5 @@
-export default `
+export default function(state){
+    return `
     <form action="https://formspree.io/quinntessential@protonmail.com" method="POST">
         <label for="name">Name:</label>
         <input type="text" name="name" id="" required>
@@ -21,3 +22,4 @@ export default `
         <input type="submit" value="Submit to meee">
     </form>
     `;
+}

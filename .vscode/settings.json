@@ -17,5 +17,9 @@
   "editor.fontLigatures": true,
   "better-comments.highlightPlainText": true,
   "eslint.autoFixOnSave": true,
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "cSpell.words": [
+    "Navigo",
+    "filepath"
+  ]
 }
